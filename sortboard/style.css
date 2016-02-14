@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'DanielRegular';
+    src: url('../fonts/daniel-webfont.eot');
+    src: url('../fonts/daniel-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/daniel-webfont.woff') format('woff'),
+         url('../fonts/daniel-webfont.ttf') format('truetype'),
+         url('../fonts/daniel-webfont.svg#DanielRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DanielBold';
+    src: url('../fonts/danielbd-webfont.eot');
+    src: url('../fonts/danielbd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/danielbd-webfont.woff') format('woff'),
+         url('../fonts/danielbd-webfont.ttf') format('truetype'),
+         url('../fonts/danielbd-webfont.svg#DanielBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DanielBlackRegular';
+    src: url('../fonts/danielbk-webfont.eot');
+    src: url('../fonts/danielbk-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/danielbk-webfont.woff') format('woff'),
+         url('../fonts/danielbk-webfont.ttf') format('truetype'),
+         url('../fonts/danielbk-webfont.svg#DanielBlackRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	overflow: hidden;
+}
+.card {
+	height: 100px;
+	padding: 5px;
+	border: solid 2px transparent;
+	width: 100px;
+	position:absolute;
+	overflow: hidden;
+	cursor:move;
+	-moz-box-shadow: 2px 2px 10px #000;
+	-webkit-box-shadow: 2px 2px 10px #000;
+	box-shadow: 2px 2px 10px #000;
+	font-family: 'DanielBold';
+	font-size: 18px;
+}
+
+#cardsort {
+	position: absolute;
+	width: 100%;
+	top:57px;
+	bottom: 0;
+}
+
+#toolbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 195px;
+	height: 100%;
+	z-index: 1;
+	background: #f0e9df url(../images/cec/background.jpg) repeat;
+	text-align: center;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin: 0;
+	padding: 0 10px;
+}
+#toolbar li {
+	display: block;
+}
+#toolbar label {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 10px 0 5px 0 !important;
+}
+#toolbar textarea, #toolbar input {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 5px 0 10px 0;
+}
+#toolbar a {
+	margin: 5px 0px;
+}
+
+#main {	                                                       
+	background: #333;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 215px;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	overflow: auto;
+	border: #634c2f solid 30px;
+	border-image: url('images/woodframe30px.jpg') 30 repeat;
+	-moz-border-image:url('images/woodframe30px.jpg') 30 repeat;
+	-webkit-border-image:url('images/woodframe30px.jpg') 30 repeat;
+}
+#sortcanvas {
+	background: #333 url('images/sortboard-tile.jpg') repeat;
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	top: 0;
+	left:0;
+}
+
+.card.selected {
+	border: 2px dashed #000;
+}
+.ui-effects-transfer {
+	background: rgba(0, 0, 0, 0.25);
+}
+
+#card-update {
+	display: block;
+}
+
+#projecttools {
+	float:left;
+	color: #fff;
+	padding: 0 20px;
+}
+#usertools {
+	float:right;
+	color: #fff;
+	padding: 0 20px;
+}

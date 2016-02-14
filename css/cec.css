@@ -1,0 +1,70 @@
+body {
+/*
+	margin: 0;
+	padding: 0; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+*/
+	color: #959595;  
+	background: #FFF url(../images/cec/background.jpg) repeat;
+}
+.gt-content {
+	background-color: transparent;
+}
+	
+#logo {
+	position: absolute;
+	left: 300px;
+	top:15px
+}
+
+#paper_plane_logo {
+	left:450px;
+	top:15px;
+	position: absolute;
+}
+
+#companytext {
+	position: absolute;
+	top: 130px;
+	left: 55px;
+}
+
+#chalkboard-blank, #chalkboard-login {
+	position: absolute;
+	left: 200px;
+	top: 240px;
+	width:669px;
+	height:274px;
+}
+#chalkboard-blank {
+	background-image: none;
+}
+#chalkboard-login {
+	background-image: url('../images/cec/blackboard.png');
+}
+input#login-user {
+	position: absolute;
+	left: 200px;
+	top: 125px;
+	width: 150px;
+}
+input#login-pass {
+	position: absolute;
+	left: 200px;
+	top: 175px;
+	width: 150px;
+}
+input#login-submit {
+	position: absolute;
+	left: 380px;
+	top: 175px;
+	width: 150px;
+}
+#notification-main {
+	position: absolute;
+	left: 250px;
+	top: 324px;
+	width: 560px;
+	z-index: 1;
+}
